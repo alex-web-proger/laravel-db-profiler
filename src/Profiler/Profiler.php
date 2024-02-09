@@ -53,7 +53,7 @@ class Profiler
 
     protected function checkEnabledProfiler()
     {
-        return config('alexlen.profiler.enabled_profiler', true);
+        return config('alexlen.profiler.enabled_profiler', true) && !app()->runningInConsole();
     }
 
     protected function driver():ProfilerLoggerInterface

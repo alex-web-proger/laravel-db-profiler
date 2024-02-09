@@ -16,7 +16,7 @@ class Backtrace
         if ($backtraceData) {
 
             $location = collect($backtraceData)->filter(function ($trace) {
-                return !isset($trace['file']) || (!str_contains($trace['file'], 'vendor') && !str_contains($trace['file'], 'ProfilerServiceProvider'));
+                return !isset($trace['file']) || (!str_contains($trace['file'], 'vendor') && !str_contains($trace['file'], 'ProfilerServiceProvider') || !str_contains($trace['file'],'Migrations\Migrator.php'));
             })->first();
 
             if ($location) {
