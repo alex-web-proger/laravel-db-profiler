@@ -14,7 +14,7 @@ class DbProfilerLogger implements ProfilerLoggerInterface
 
     public function save(QueryExecuted $query, Backtrace $backtrace): void
     {
-        if (!$this->ignore) {
+        if (!$this->ignore && !app()->runningInConsole()) {
 
             $this->ignore = true;
 
