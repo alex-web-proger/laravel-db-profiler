@@ -1,0 +1,29 @@
+{
+    "name": "alexlen/laravel-db-profiler",
+    "version": "1.0",
+    "description": "Profiler database",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "alexlen",
+            "email": "alex.web.proger@gmail.com",
+            "homepage": "https://github.com/alex-web-proger"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+    },
+    "autoload": {
+        "psr-4": {
+            "Alexlen\\Prifiler\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Alexlen\\Prifiler\\Providers\\ProfilerServiceProvider"
+            ]
+        }
+    }
+}
