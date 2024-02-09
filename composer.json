@@ -1,6 +1,6 @@
 {
     "name": "alexlen/laravel-db-profiler",
-    "version": "1.1",
+    "version": "1.2",
     "description": "Profiler database",
     "minimum-stability": "stable",
     "license": "MIT",
