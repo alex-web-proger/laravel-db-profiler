@@ -16,13 +16,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Alexlen\\Prifiler\\": "src"
+            "Alexlen\\Profiler\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Alexlen\\Prifiler\\Providers\\ProfilerServiceProvider"
+                "Alexlen\\Profiler\\Providers\\ProfilerServiceProvider"
             ]
         }
     }
