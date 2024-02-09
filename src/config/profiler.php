@@ -37,6 +37,6 @@ return [
     /*
      * file или db
      */
-    'driver' => 'db',
+    'driver' => 'file',
 
 ];

@@ -40,6 +40,6 @@ class ProfilerServiceProvider extends ServiceProvider
 
         $this->publishes([__DIR__.'/../config/profiler.php' => config_path('alexlen/profiler.php')], 'db-profiler');
 
-        $this->publishes([__DIR__.'/../database/migrations' => database_path('database/migrations')], 'db-profiler');
+        $this->publishes([__DIR__.'/../database/migrations' => database_path('migrations')], 'db-profiler');
     }
 }
