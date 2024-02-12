@@ -36,7 +36,11 @@ class ProfilerServiceProvider extends ServiceProvider
             app(Profiler::class)->addSql($query);
         });
 
-        //$this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                  \Alexlen\Profiler\Commands\Profiler::class
+            ]);
+        }
 
         $this->publishes([__DIR__.'/../config/profiler.php' => config_path('alexlen/profiler.php')], 'db-profiler');
 

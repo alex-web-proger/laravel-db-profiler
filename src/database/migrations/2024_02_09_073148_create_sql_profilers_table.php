@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('env', 20)->nullable(true)->comment('Environment name');
             $table->decimal('duration', 4, 2)->comment('Request duration');
-            $table->string('sql')->nullable(true)->comment('Request');
+            $table->text('sql')->nullable(true)->comment('Request');
             $table->string('file_name')->nullable(true)->comment('Request source file name');
             $table->string('line')->nullable(true)->comment('Request source line');
             $table->string('file_path')->nullable(true)->comment('Request source file path');
